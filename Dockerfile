@@ -1,5 +1,7 @@
 FROM agrdocker/agr_base_linux_env:latest
 
-RUN apt-get install -y npm
-RUN apt-get install -y nodejs
-RUN apt-get install -y nodejs-legacy
+RUN apt-get install nodejs -y
+RUN apt-get install npm -y
+RUN npm cache clean -f
+RUN npm install -g n
+RUN n stable
