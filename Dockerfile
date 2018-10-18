@@ -1,4 +1,4 @@
-FROM agrdocker/agr_base_linux_env:latest
+FROM gocd.alliancegenome.org:5000/agr_base_linux_env:latest
 
 RUN apt-get install nodejs -y
 RUN apt-get install npm -y
